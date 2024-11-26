@@ -9,7 +9,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #f9f9f9;
     color: #fffefe;
-    background-image: url('imags/wp12566973-purple-and-blue-4k-wallpapers.jpg'); /* Ensure this path is correct */
+    background-image: url(''wp12566973-purple-and-blue-4k-wallpapers.jpg'); /* Ensure this path is correct */
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
