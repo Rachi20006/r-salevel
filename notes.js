@@ -1,21 +1,3 @@
-function showNotes() {
-    // Hide the home section
-    document.getElementById('home').style.display = 'none';
-    
-    // Show the subject buttons
-    document.getElementById('subject-buttons').style.display = 'flex';
-    
-    // Hide all subject contents when switching to the Notes page
-    const subjectContents = document.querySelectorAll('.subject-content');
-    subjectContents.forEach(content => {
-        content.style.display = 'none';
-    });
-    
-    // Hide the footer on the Notes page
-    document.getElementById('footer').style.display = 'none';
-}
-
-// Function to show specific subject content
 function showContent(subject) {
     // Hide all other subjects' contents
     const subjectContents = document.querySelectorAll('.subject-content');
@@ -32,36 +14,12 @@ function showContent(subject) {
         content.style.display = 'none';
     });
 }
-
-// Function to show specific unit content
 function showUnit(unitId) {
-    // Hide all other unit contents
-    const unitContents = document.querySelectorAll('.unit-content');
-    unitContents.forEach(content => {
-        content.style.display = 'none';
-    });
-
-    // Show the selected unit content
-    document.getElementById(unitId).style.display = 'block';
+    // Redirect to the corresponding unit HTML page
+    if (unitId === 'physics-unit1') {
+        window.location.href = 'physics-unit1.html'; // Redirect to Physics Unit 1 page
+    } else if (unitId === 'physics-unit2') {
+        window.location.href = 'physics-unit2.html'; // Redirect to Physics Unit 2 page (if you create this page)
+    }
+    // Add similar conditions for other subjects and units as needed
 }
-
-// Function to show Notes or Videos within a specific unit
-function showContentSection(sectionId) {
-    // Hide all other sections within the unit (notes/videos)
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-    
-    // Show the selected content section (either notes or videos)
-    document.getElementById(sectionId).style.display = 'block';
-}
-// Smooth scroll functionality
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
