@@ -130,25 +130,30 @@ h1 {
     justify-content: space-between; /* Space out columns equally */
     padding: 10px; /* Optional padding */
 }
+
 .video-columns {
     display: flex;
     gap: 50px; /* Adjusts the gap between the two columns */
     max-width: 1200px; /* Adjust overall container width */
-    margin:  auto; /* Center container */
+    margin: auto; /* Center container */
 }
 
 .video-column {
     flex: 1 1 calc(50% - 20px); /* Two columns on iPad (50% width) with spacing */
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+    margin: 10px; /* Margin between columns */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
     gap: 15px; /* Space between videos in the same column */
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     backdrop-filter: blur(100px);
     border-radius: 12px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    min-height: 200px; /* Set a minimum height for equal column heights */
 }
+
 @media (max-width: 768px) {
     .video-column {
         flex: 1 1 100%; /* Stack columns on smaller screens */
