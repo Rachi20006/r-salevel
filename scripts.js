@@ -1,4 +1,3 @@
-
 const closeButton = document.getElementById("close-mobile");
 const nav = document.getElementById("nav-mobile");
 const navLink = document.querySelectorAll(".nav-link");
@@ -38,3 +37,7 @@ const form = document.getElementById('contactForm');
       alert('There was a problem with your submission.');
     });
   });
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const navList = document.querySelector('nav ul');
+const hamburger = document.querySelector('.hamburger');
+
