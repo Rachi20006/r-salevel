@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="notes.css">
-    <script src="notes.js" defer></script>
+    <title>A Level Notes - Subjects</title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">A Level</div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Logo and Navigation -->
-        <header>
-            <div class="logo">A level</div>
-            <nav>
-              <a href="index.html">Home</a>
-            </nav>
-          </header>
-
+        <h1>Select a Subject:</h1>
         <!-- Subject Buttons (hidden by default) -->
         <div class="subject-buttons" id="subject-buttons">
             <button onclick="showContent('physics')">Physics</button>
@@ -32,191 +32,23 @@
                 <button onclick="showUnit('physics-unit1')">Unit 1</button>
                 <button onclick="showUnit('physics-unit2')">Unit 2</button>
             </div>
-            <div id="physics-unit1" class="unit-content" style="display: none;">
-                <div class="unit-options">
-                    <button onclick="showContentSection('physics-unit1-notes')">Notes</button>
-                    <button onclick="showContentSection('physics-unit1-videos')">Videos</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-media-container">
+                <div class="social-media">
+                    <box-icon type='logo' name='instagram'></box-icon>
                 </div>
-
-                <!-- Notes Section with PDF Embed -->
-                <div id="physics-unit1-notes" class="content-section" style="display: none;">
-                    <h4>Physics Unit 1 Notes</h4>
-                    <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
+                <div class="social-media">
+                    <box-icon name='youtube' type='logo'></box-icon>
                 </div>
-
-                <div id="physics-unit1-videos" class="content-section" style="display: none;">
-                    <h4 style="text-align: center;">Physics Unit 1 Videos</h4>
-                    <div class="video-columns" style="display: flex; justify-content: center; gap: 20px;">
-                        <div class="video-column" style="text-align: center;">
-                            <h3>Part 1</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4o6zzNCx5m4" style="margin: 0 auto;" allowfullscreen></iframe>
-                            <h3>Part 2</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bWdJSF5jNMc" style="margin: 0 auto;" allowfullscreen></iframe>
-                            <h3>Part 3</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JpF6Pj9nhC8" style="margin: 0 auto;" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-column" style="text-align: center;">
-                            <h3>Part 4</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cEEYqtGjmH8" style="margin: 0 auto;" allowfullscreen></iframe>
-                            <h3>Part 5</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kxRShE7C0Ok" style="margin: 0 auto;" allowfullscreen></iframe>
-                            <h3>Part 6</h3>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mHL3gjhH0QY" style="margin: 0 auto;" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-        <div id="physics-unit2" class="unit-content" style="display: none;">
-            <div class="unit-options">
-                <button onclick="showContentSection('physics-unit2-notes')">Notes</button>
-                <button onclick="showContentSection('physics-unit2-videos')">Videos</button>
-            </div>
-
-            <!-- Notes Section with PDF Embed -->
-            <div id="physics-unit2-notes" class="content-section" style="display: none;">
-                <h4>Physics Unit 2 Notes</h4>
-                <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
-            </div>
-
-            <!-- Videos Section with YouTube Embed -->
-            <div id="physics-unit2-videos" class="content-section" style="display: none;">
-                <h4>Physics Unit 2 Videos</h4>
-                <div class="video-columns">
-                    <div class="video-column">
-                        <h3>part 1</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RgaPeRcai34?si=6ra3qDJ04u7nQ89K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>part 2</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eL69Kj0dFQA?si=6TFprbdFvjgfy72h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3> part 3</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8iRHv5D6k7s?si=ibXv_yruZ_yRAN8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>part 4</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_nrXS8ejVVw?si=fguIR3YQSaecbS6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-column">
-                        <h3>part 5</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zA89tMnjHjg?si=4ulThOTObCn0rubY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>part 6</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6vBzRYRF1hI?si=QKzNQ0v2viZNVtqp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>part 7</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ipob_dAM1Tw?si=AXzP1NKpIsD4fZpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                <div class="social-media">
+                    <box-icon type='logo' name='tiktok'></box-icon>
                 </div>
             </div>
         </div>
-    </div>
-
-        <!-- Subject Content for Math -->
-        <div class="subject-content" id="math" style="display: none;">
-            <h2>Math</h2>
-            <div class="unit-buttons">
-                <button onclick="showUnit('math-unit1')">P1</button>
-                <button onclick="showUnit('math-unit2')">P2</button>
-            </div>
-            <div id="math-unit1" class="unit-content" style="display: none;">
-                <div class="unit-options">
-                    <button onclick="showContentSection('math-unit1-notes')">Notes</button>
-                    <button onclick="showContentSection('math-unit1-videos')">Videos</button>
-                </div>
-
-                <!-- Notes Section with PDF Embed -->
-                <div id="math-unit1-notes" class="content-section" style="display: none;">
-                    <h4>Math Unit 1 Notes</h4>
-                    <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
-                </div>
-
-                <!-- Videos Section with YouTube Embed -->
-                <div id="math-unit1-videos" class="content-section" style="display: none;">
-                    <h4>Math Unit 1 Videos</h4>
-                    <div class="video-columns">
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4o6zzNCx5m4" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bWdJSF5jNMc" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JpF6Pj9nhC8" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cEEYqtGjmH8" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kxRShE7C0Ok" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mHL3gjhH0QY" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Subject Content for Biology -->
-        <div class="subject-content" id="biology" style="display: none;">
-            <h2>Biology</h2>
-            <div class="unit-buttons">
-                <button onclick="showUnit('biology-unit1')">Unit 1</button>
-                <button onclick="showUnit('biology-unit2')">Unit 2</button>
-            </div>
-            <div id="biology-unit1" class="unit-content" style="display: none;">
-                <div class="unit-options">
-                    <button onclick="showContentSection('biology-unit1-notes')">Notes</button>
-                    <button onclick="showContentSection('biology-unit1-videos')">Videos</button>
-                </div>
-
-                <!-- Notes Section with PDF Embed -->
-                <div id="biology-unit1-notes" class="content-section" style="display: none;">
-                    <h4>Biology Unit 1 Notes</h4>
-                    <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
-                </div>
-
-                <!-- Videos Section with YouTube Embed -->
-                <div id="biology-unit1-videos" class="content-section" style="display: none;">
-                    <h4>Biology Unit 1 Videos</h4>
-                    <div class="video-columns">
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4o6zzNCx5m4" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bWdJSF5jNMc" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JpF6Pj9nhC8" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cEEYqtGjmH8" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kxRShE7C0Ok" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mHL3gjhH0QY" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Subject Content for Chemistry -->
-        <div class="subject-content" id="chemistry" style="display: none;">
-            <h2>Chemistry</h2>
-            <div class="unit-buttons">
-                <button onclick="showUnit('chemistry-unit1')">Unit 1</button>
-                <button onclick="showUnit('chemistry-unit2')">Unit 2</button>
-            </div>
-            <div id="chemistry-unit1" class="unit-content" style="display: none;">
-                <div class="unit-options">
-                    <button onclick="showContentSection('chemistry-unit1-notes')">Notes</button>
-                    <button onclick="showContentSection('chemistry-unit1-videos')">Videos</button>
-                </div>
-
-                <!-- Notes Section with PDF Embed -->
-                <div id="chemistry-unit1-notes" class="content-section" style="display: none;">
-                    <h4>Chemistry Unit 1 Notes</h4>
-                    <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
-                </div>
-
-                <!-- Videos Section with YouTube Embed -->
-                <div id="chemistry-unit1-videos" class="content-section" style="display: none;">
-                    <h4>Chemistry Unit 1 Videos</h4>
-                    <div class="video-columns">
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4o6zzNCx5m4" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bWdJSF5jNMc" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JpF6Pj9nhC8" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-column">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cEEYqtGjmH8" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kxRShE7C0Ok" allowfullscreen></iframe>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mHL3gjhH0QY" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="notes.js"></script>
+    </footer>
+    <script src="notes.js"></script>
 </body>
 </html>
