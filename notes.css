@@ -112,8 +112,14 @@ h1 {
     font-size: 28px;
     margin-bottom: 30px;
 }
+h2 {
+    font-size: 30px;
+    margin-bottom :10px
+}
 
 /* Subject Buttons */
+
+
 .subject-buttons {
     display: flex;
     justify-content: center;
@@ -123,7 +129,7 @@ h1 {
 }
 
 .subject-buttons button {
-    padding: 15px 30px;
+    padding: 15px 35px;
     background-color: rgba(255, 255, 255, 0.15);
     color: white;
     border: none;
@@ -142,7 +148,7 @@ h1 {
 }
 .unit-options {
   display: flex;
-  gap: 20px; /* Space between buttons */
+  gap: 200000px; /* Space between buttons */
 }
 
 .unit-button {
@@ -154,13 +160,13 @@ h1 {
   cursor: pointer; /* Pointer on hover */
   font-size: 1.2em; /* Font size */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .unit-button:hover {
   background-color: #4a90e2; /* Change background color on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
 }
 
 footer {
@@ -180,4 +186,33 @@ footer {
     display: inline-block;
     margin: 0 10px;
 }
- 
+.physics-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+.math-header {
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+
+
+.biology-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+.chemistry-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
