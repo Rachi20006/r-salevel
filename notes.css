@@ -27,12 +27,15 @@
     margin: 0; /* Remove default margin */
 }
   body {
-      background-image: url('wp12566973-purple-and-blue-4k-wallpapers.jpg');
-      background-size: cover; /* Adjusts image to cover the entire screen */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents the image from repeating */
-      color: #fff;
-  }
+    background-image: url('imags/wp12566973-purple-and-blue-4k-wallpapers.jpg');
+    background-size: cover; /* Adjusts image to cover the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    color: #fff;
+    height:100vh;
+    margin:0;
+}
   
   .container {
     padding: 3rem 1rem;
