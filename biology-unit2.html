@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="physics-unit1.css">
+    <title>Biology Unit 2</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Biology Unit 2</h1>
+        <div class="unit-buttons">
+            <button onclick="showContentSection('biology-unit2-notes')">Notes</button>
+            <button onclick="showContentSection('biology-unit2-videos')">Videos</button>
+        </div>
+
+        <!-- Notes Section -->
+        <div id="biology-unit2-notes" class="content-section" style="display: none;">
+            <h3>Biology Unit 2 Notes</h3>
+            <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
+        </div>
+
+        <!-- Videos Section -->
+        <div id="biology-unit2-videos" class="content-section" style="display: none;">
+            <h3>Biology Unit 2 Videos</h3>
+            <div class="video-columns" style="display: flex; justify-content: center; gap: 20px;">
+                <div class="video-column" style="text-align: center;">
+                <h3>Protein transport in eukaryotic cells</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/Ivcm_0u7IbQ?si=wcw9ACs3SLEkLRy6" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Cell Cycle</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/bWdJSF5jNMc?si=0zjOfmY1_MFZS4PW" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Stem Cells and Types</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/mOEpwU8mNmk?si=318yOuPY7jyIBX-H" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Cell division- meiosis</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/4BlXo4PpAeQ?si=JQy6yCxmxJz0OzTI" style="margin: 0 auto;" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-media-container">
+                <div class="social-media">
+                    <box-icon type='logo' name='instagram'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon name='youtube' type='logo'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon type='logo' name='tiktok'></box-icon>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showContentSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+        }
+    </script>
+</body>
+</html>

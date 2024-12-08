@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="physics-unit1.css">
+    <title>Chemistry Unit 1</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Chemistry Unit 1</h1>
+        <div class="unit-buttons">
+            <button onclick="showContentSection('chemistry-unit1-notes')">Notes</button>
+            <button onclick="showContentSection('chemistry-unit1-videos')">Videos</button>
+        </div>
+
+        <!-- Notes Section -->
+        <div id="chemistry-unit1-notes" class="content-section" style="display: none;">
+            <h3>Chemistry Unit 1 Notes</h3>
+            <iframe src="https://drive.google.com/file/d/1XMSA_y9J0Dt2G4nUv0KDBeH-pOEE6-7u/preview#page1" width="400" height="500"></iframe>
+        </div>
+
+        <!-- Videos Section -->
+        <div id="chemistry-unit1-videos" class="content-section" style="display: none;">
+            <h3>Chemsitry Unit 1 Videos</h3>
+            <div class="video-columns" style="display: flex; justify-content: center; gap: 20px;">
+                <div class="video-column" style="text-align: center;">
+                <h3>Part 1</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/MhoE9g3HjKM?si=jlnagj2340Drx1Xz" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 2</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/I5AwNzIOikw?si=OR9PTzOKsDZ3Hpt1" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 3</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/V9MMdqFjPlU?si=f09t5biJdCO-AgE5" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 4</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/gATWlw0KMOo?si=HXxIykFyfuK9w4p2" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 5</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/ovcDjlDXVeA?si=fkVk2oznSMmaAE0w" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 6</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/I7_a_OcKJtY?si=dCzT3CHaGjkdexwc" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 7</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/jOrB7ET4lkQ?si=BEYMjRzdeqyndrKM" style="margin: 0 auto;" allowfullscreen></iframe>
+                <h3>Part 8</h3>
+                <iframe width="60%" height="315" src="https://www.youtube.com/embed/sxHmHW1P_K8?si=BTuDiqKWUBwJ0eRs" style="margin: 0 auto;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-media-container">
+                <div class="social-media">
+                    <box-icon type='logo' name='instagram'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon name='youtube' type='logo'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon type='logo' name='tiktok'></box-icon>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showContentSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+        }
+    </script>
+</body>
+</html>
