@@ -19,15 +19,20 @@ function showUnit(unitId) {
         window.location.href = 'physics-unit1.html'; // Redirect to Physics Unit 1
     } else if (unitId === 'physics-unit2') {
         window.location.href = 'physics-unit2.html'; // Redirect to Physics Unit 2
+    } else if (unitId === 'physics-unit3') {
+        window.location.href = 'physics-unit3.html'; // Redirect to Physics Unit 3
     } else if (unitId === 'biology-unit1') {
         window.location.href = 'biology-unit1.html'; // Redirect to Biology Unit 1
     } else if (unitId === 'biology-unit2') {
         window.location.href = 'biology-unit2.html'; // Redirect to Biology Unit 2
+    } else if (unitId === 'biology-unit3') {
+        window.location.href = 'biology-unit3.html'; // Redirect to Biology Unit 3
     } else if (unitId === 'chemistry-unit1') {
-        window.location.href = 'chemistry-unit1.html'; // Redirect to Biology Unit 1
+        window.location.href = 'chemistry-unit1.html'; //Redirect to Chemistry Unit1
     } else if (unitId === 'chemistry-unit2') 
-        window.location.href = 'chemistry-unit2.html'; // Redirect to Biology Unit 2
-    
+        window.location.href = 'chemistry-unit2.html'; 
+     else if (unitId === 'chemistry-unit3') 
+        window.location.href = 'chemistry-unit3.html'; 
 }
 function debounce(func, delay) {
     let timeout;
