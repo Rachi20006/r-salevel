@@ -70,3 +70,10 @@ window.addEventListener('load', function() {
     // Automatically accept necessary cookies without the popup (for testing or a more seamless user experience)
     document.cookie = "necessary-cookie=true; path=/"; // Add your necessary cookie here
 });
+window.addEventListener('load', function() {
+    if (window.cookieconsent) {
+        window.cookieconsent.initialise({
+            "type": "none"  // Disable the cookie consent banner
+        });
+    }
+});
