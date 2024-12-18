@@ -48,4 +48,9 @@ function debounce(func, delay) {
       // Your action here (e.g., changing content or data)
     }, 300)); // Adjust 300ms to the delay you want
   });
-  
+window.addEventListener("load", function() {
+    var consentPopup = document.querySelector(".cookie-consent-popup"); // Adjust the selector if needed
+    if (consentPopup) {
+        consentPopup.style.display = "none"; // Hides the popup
+    }
+});
