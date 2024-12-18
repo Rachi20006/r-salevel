@@ -48,9 +48,25 @@ function debounce(func, delay) {
       // Your action here (e.g., changing content or data)
     }, 300)); // Adjust 300ms to the delay you want
   });
-window.addEventListener("load", function() {
-    var consentPopup = document.querySelector(".cookie-consent-popup"); // Adjust the selector if needed
-    if (consentPopup) {
-        consentPopup.style.display = "none"; // Hides the popup
-    }
+window.addEventListener('load', function() {
+    window.cookieconsent.initialise({
+        "type": "opt-in",  // opt-in allows only necessary cookies by default
+        "content": {
+            "message": "We use cookies to ensure you get the best experience on our website."
+        },
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#f1d600"
+            }
+        },
+        "law": {
+            "regionalLaw": true  // Enable this if it's a GDPR-compliant cookie law
+        }
+    });
+
+    // Automatically accept necessary cookies without the popup (for testing or a more seamless user experience)
+    document.cookie = "necessary-cookie=true; path=/"; // Add your necessary cookie here
 });
