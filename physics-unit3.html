@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="physics-unit1.css">
+    <title>Physics Unit 3</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Physics Unit 3</h1>
+        <div class="unit-buttons">
+            <button onclick="showContentSection('physics-unit3-notes')">Notes</button>
+            <button onclick="showContentSection('physics-unit3-videos')">Videos</button>
+        </div>
+
+        <!-- Notes Section -->
+        <div id="physics-unit3-notes" class="content-section" style="display: none;">
+            <h4>Physics Unit 3 Notes</h4>
+            <iframe src="https://drive.google.com/file/d/1cRGfjJ4GiGUzzT8WsYJ5vt_q-Nho8LaS/preview#page1" width="400" height="500"></iframe>
+            
+            
+        </div>
+
+        <!-- Videos Section -->
+        <div id="physics-unit3-videos" class="content-section" style="display: none;">
+            <h4>Physics Unit 3 Videos</h4>
+            <div class="video-columns" style="display: flex; justify-content: center; gap: 20px;">
+                <div class="video-column" style="text-align: center;">
+                <h3>Coming soon</h3>
+                <iframe width="60%" height="315" src="" style="margin: 0 auto;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-media-container">
+                <div class="social-media">
+                    <box-icon type='logo' name='instagram'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon name='youtube' type='logo'></box-icon>
+                </div>
+                <div class="social-media">
+                    <box-icon type='logo' name='tiktok'></box-icon>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showContentSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+        }
+    </script>
+</body>
+</html>
