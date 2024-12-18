@@ -161,4 +161,18 @@ h1 {
         flex: 1 1 100%; /* Stack columns on smaller screens */
     }
 }
+h4 {
+    margin-bottom: 60px; /* Adds space below the title */
+    font-size: 2rem; /* Adjust font size if needed */
+}
+
+h5 {
+    margin-bottom: 20px; /* Adds space below the subtitle */
+    font-weight: bold; /* Keeps subtitle bold */
+}
+
+/* Spacing between note sections */
+.note-section {
+    margin-bottom: 40px; /* Adds space between notes */
+}
 
